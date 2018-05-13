@@ -1,0 +1,40 @@
+.nav-bar-container{
+	background: white;
+	background: linear-gradient(to right, white , lightblue);
+}
+
+.first {
+  padding-top:50px;
+  height:30vh;
+  min-height:40px;
+  background-size:cover;
+  background-image:url('../../public/flag.jpg');
+}
+
+.affix {
+  -webkit-transition:padding 0.2s ease-out;
+  -moz-transition:padding 0.2s ease-out;
+  -o-transition:padding 0.2s ease-out;
+  transition:padding 0.2s ease-out;
+
+}
+
+ .affix-top {
+   navbar style at top
+   background:transparent;
+  border-color:transparent;
+  padding: 15px;
+  -webkit-transition:all 0.5s ease;
+  -moz-transition:all 0.5s ease;
+  -o-transition:all 0.5s ease;
+  transition:all 0.5s ease;
+ }
+
+ .affix-top .nav>li>a {
+   color: green;
+}
+
+.affix-top .navbar-collapse {
+   border-color:transparent;
+   box-shadow:initial;
+}
