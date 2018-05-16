@@ -30,11 +30,9 @@
 }
 .grid-container {
   display: grid;
-
-
   grid-template-columns: auto auto auto;
+	padding bottom:auto;
 
-  padding: 10px;
 }
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
@@ -46,6 +44,7 @@
 }
 
 .main {
+
   padding: 16px;
   margin-top: 30px;
   height: 1500px; /* Used in this example to enable scrolling */
@@ -83,15 +82,17 @@
 	}
 
 	.projects{
-		background-color: #81E9EF;
+		background-color: white;
   background-image: -webkit-linear-gradient(30deg, #81E9EF 50%, #E4F086 50%);
   min-height: 500px;
+	
 	}
-	#bio{
-		.transparent{
-	        background:rgba(1,1,1,0.5);
-	    }
-	}
+body{
+	background:rgba(1,1,1,0.5);
+}
+ #bio{
+	color: white;
+}
 	</style>
 
 	<title>portfolio</title>
@@ -99,7 +100,7 @@
 <body>
 	<div>
 
-
+<img src="./top.jpeg" style="width:100vw; height: 40vw;"alt="">
 	</div>
 	<div class="navbar">
 
@@ -118,10 +119,11 @@
 						<div class= "col-sm-5">
 							<div class="card mb-6" style="align: center; margin-top: 100; width: 400; height: 400; border: black 1px solid; padding:40;">
 								<h1>Bio</h1>
-								<img src='./GHS.jpg'style="width: 200; height: 200;"} />
+								<img src='./GHS.jpg'style="border:solid white 1px; width: 200; height: 200;"} />
 								<div class="card-block">
-									<h4 class="card-title">James Lockwood</h4>
+									<h3 class="card-title">James Lockwood</h3>
 									<p class="card-text">I am a Fullstack Web Developer</p>
+
 								</div>
 							</div>
 						</div>
@@ -160,7 +162,7 @@
 </Section >
 
 <section class="projects" id="projects" >
-
+</br>
 	<h1>projects</h1>
 
  	<div class="grid-container">
@@ -169,7 +171,7 @@
 		<div class="flipper">
 			<div class="front">
 				<h2>Find an Experience</h2>
-				<img src="./Find_an_Experience.png" style="width: 315; height: 300;" />
+				<img src="./Find_an_Experience.png" style=" width: 315; height: 300;" />
 			</div>
 			<div class="back">
 				<h2>Description</h2>
@@ -269,6 +271,7 @@
 
 <section id="contact">
 	<p>my info</p>
+	<p>https://www.linkedin.com/in/james-lockwood/</p>
 </section>
 
 
