@@ -28,6 +28,22 @@
   background: #ddd;
   color: black;
 }
+.grid-container {
+  display: grid;
+
+
+  grid-template-columns: auto auto auto;
+
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+	margin-left: 100px;
+  font-size: 30px;
+  text-align: center;
+}
 
 .main {
   padding: 16px;
@@ -65,6 +81,17 @@
 		transform: rotateY(180deg);
 		border: 2px solid black;
 	}
+
+	.projects{
+		background-color: #81E9EF;
+  background-image: -webkit-linear-gradient(30deg, #81E9EF 50%, #E4F086 50%);
+  min-height: 500px;
+	}
+	#bio{
+		.transparent{
+	        background:rgba(1,1,1,0.5);
+	    }
+	}
 	</style>
 
 	<title>portfolio</title>
@@ -72,7 +99,7 @@
 <body>
 	<div>
 
-		
+
 	</div>
 	<div class="navbar">
 
@@ -84,10 +111,13 @@
 
 </div>
 	<Section id="bio">
-		<div>
-			<div class="row">
+
+
+
+			<div class="grid-container">
 						<div class= "col-sm-5">
-							<div class="card mb-6" style="width: 400; height: 400;">
+							<div class="card mb-6" style="align: center; margin-top: 100; width: 400; height: 400; border: black 1px solid; padding:40;">
+								<h1>Bio</h1>
 								<img src='./GHS.jpg'style="width: 200; height: 200;"} />
 								<div class="card-block">
 									<h4 class="card-title">James Lockwood</h4>
@@ -96,11 +126,11 @@
 							</div>
 						</div>
 						<div class="col-sm-5">
-							<div class="card mb-6" style="width: 400; height: 400;">
+							<div class="card mb-6" style="align: center; margin-top: 100; width: 400; height: 400; border: black 1px solid; padding:40;">
 								<div class="card">
 			<div class="card-content">
 				<p class="title">
-					<b>Skill/Languages/Frontend/Backend</b>
+					<h1>Skill/Languages/Frontend/Backend</h1>
 				</p>
 				<p class="subtitle">
 			Full-Stack Developer
@@ -124,12 +154,16 @@
 						</div>
 					</div>
 
-		</div>
+
+
+
 </Section >
 
-<section id="projects" >
+<section class="projects" id="projects" >
 
 	<h1>projects</h1>
+
+ 	<div class="grid-container">
 <div class="col-sm">
 	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 		<div class="flipper">
@@ -228,7 +262,7 @@
 					</div>
 				</div>
 			</div>
-
+</div>
 
 
 </section>
