@@ -4,26 +4,239 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-	<link rel="stylesheet" href="index.css">
+	<style>
+	.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+	z-index: 5;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+	.flip-container {
+		perspective: 1000px;
+	}/* flip the pane when hovered */
+		.flip-container:hover .flipper, .flip-container.hover .flipper {
+			transform: rotateY(180deg);
+		}
+	.flip-container, .front, .back {
+		width: 320px;
+		height: 480px;
+	}	/* flip speed goes here */
+	.flipper {
+		transition: 0.6s;
+		transform-style: preserve-3d;
+		position: relative;
+	}/* hide back of pane during swap */
+	.front, .back {
+		backface-visibility: hidden;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}/* front pane, placed above back */
+	.front {
+		z-index: 2;
+		/* for firefox 31 */
+		transform: rotateY(0deg);
+		border: 2px solid black;
+	}/* back, initially hidden pane */
+	.back {
+		transform: rotateY(180deg);
+		border: 2px solid black;
+	}
+	</style>
 
 	<title>portfolio</title>
 </head>
 <body>
-	<ul>
-	  <li><a class="active" href="#home">Home</a></li>
-	  <li><a href="https://drive.google.com/open?id=1vhEdXFiCWLnEOYIQRbwKQo_OW5_PvgDU">Resume</a></li>
-	  <li><a href="#contact">Contact</a></li>
-	  <li><a href="#about">About</a></li>
-	</ul>
-	<Section>
+	<div>
 
-	<p>word!</p>
-	</Section>
+		
+	</div>
+	<div class="navbar">
+
+	  <a class="active" href="#home">Home</a>
+	  <a href="https://drive.google.com/open?id=1vhEdXFiCWLnEOYIQRbwKQo_OW5_PvgDU">Resume</a>
+		<a href="#bio">Bio</a>
+	  <a href="#projects">Projects</a>
+	  <a href="#contact">Contacts</a>
+
+</div>
+	<Section id="bio">
+		<div>
+			<div class="row">
+						<div class= "col-sm-5">
+							<div class="card mb-6" style="width: 400; height: 400;">
+								<img src='./GHS.jpg'style="width: 200; height: 200;"} />
+								<div class="card-block">
+									<h4 class="card-title">James Lockwood</h4>
+									<p class="card-text">I am a Fullstack Web Developer</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-5">
+							<div class="card mb-6" style="width: 400; height: 400;">
+								<div class="card">
+			<div class="card-content">
+				<p class="title">
+					<b>Skill/Languages/Frontend/Backend</b>
+				</p>
+				<p class="subtitle">
+			Full-Stack Developer
+					<br/>
+			Scrum
+
+				</p>
+			</div>
+			<footer class="card-footer">
+				<p>Javascript, HTML, CSS, WordPress </p>
+			</footer>
+			<div>
+			React, React-Native, Bootstrap, Materialize, JQuery, Heroku
+			</div>
+			<footer class="card-footer">
+				<p>Express, Knex, PostgreSQL, MongoDB, AWS, Mongose, Axios, API, Database,Node.js, Postman  </p>
+			</footer>
+		</div>
+
+							</div>
+						</div>
+					</div>
+
+		</div>
+</Section >
+
+<section id="projects" >
+
+	<h1>projects</h1>
+<div class="col-sm">
+	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+		<div class="flipper">
+			<div class="front">
+				<h2>Find an Experience</h2>
+				<img src="./Find_an_Experience.png" style="width: 315; height: 300;" />
+			</div>
+			<div class="back">
+				<h2>Description</h2>
+				<p> This porject gives the user the ability to find a local park to job in all they need is a city and state so it's mobile friendly as well for the person that's on the go.</p>
+				<h4>Tech Used</h4>
+				<li>GitHub</li>
+				<li>JavaScript</li>
+				<li>CSS</li>
+				<li>HTML</li>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="col-sm">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<h2>KillBase</h2>
+								<img src='./Killbase.png' style="width: 315; height: 300;" />
+							</div>
+							<div class="back">
+								<h2>Description</h2>
+								<p> I built out a RESTful API and used it to build out the functalality needed to preform CRUD abilities.</p>
+								<h4>Tech Used</h4>
+								<li>Knex</li>
+								<li>Express</li>
+								<li>PostgreSQL</li>
+								<li>JQuery</li>
+								<li>GitHub</li>
+								<li>JavaScript</li>
+								<li>CSS</li>
+							</div>
+						</div>
+					</div>
+				</div>
+
+<div class="col-sm">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<h2>Whats in your Fridge</h2>
+								<img src='./Whats_in_your_fridge.png' style="width: 315; height: 300;"/>
+							</div>
+							<div class="back">
+								<h2>Description</h2>
+								<p> This an app that give people the chance to get involved in their local governemnt in a non partisan way.</p>
+								<h4>Tech Used</h4>
+								<li>Express</li>
+								<li>MongoDB</li>
+								<li>Axios</li>
+								<li>Mongose</li>
+								<li>Materialize</li>
+								<li>GitHub</li>
+								<li>Trello</li>
+								<li>JavaScript</li>
+								<li>OAuth</li>
+								<li>Bcrypt</li>
+								<li>CSS</li>
+							</div>
+						</div>
+					</div>
+				</div>
+<div class="col-sm">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<h2>Involved</h2>
+								<img src='./Involved.png' style="width: 315; height: 300;"/>
+							</div>
+							<div class="back">
+								<h2>Description</h2>
+								<p> This an app that give people the chance to get involved in their local governemnt in a non partisan way.</p>
+								<h4>Tech Used</h4>
+								<li>React</li>
+								<li>React-Router</li>
+								<li>Redux</li>
+								<li>Express</li>
+								<li>MongoDB</li>
+								<li>Axios</li>
+								<li>Mongose</li>
+								<li>Bootstrap</li>
+								<li>GitHub</li>
+								<li>Trello</li>
+								<li>JavaScript</li>
+								<li>JSX</li>
+								<li>CSS</li>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
 
 
+</section>
+
+<section id="contact">
+	<p>my info</p>
+</section>
 
 
-	</nav>
 </body>
 </html>
