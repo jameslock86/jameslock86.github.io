@@ -1,3 +1,3 @@
 # jameslock86.github.io
 
-this is going to e my portfolio site
+this is going to be my portfolio site

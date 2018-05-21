@@ -4,6 +4,7 @@ p, li,h1,h2,h3,h4,h5{
 	 'Tenor Sans', sans-serif;
  }
 .navbar {
+	width:;
 overflow: hidden;
 background-color: #333;
 position: fixed;
@@ -94,6 +95,7 @@ margin-top: 30px;
 height: 1500px; /* Used in this example to enable scrolling */
 }
 .flip-container {
+
 	perspective: 1000px;
 }/* flip the pane when hovered */
 	.flip-container:hover .flipper, .flip-container.hover .flipper {
@@ -173,6 +175,12 @@ overflow:auto;
 	background-color: rgb(69,69,69);
 	background-image: -webkit-linear-gradient(30deg, rgb(69,69,69) 50%, rgb(69,69,69) 50%);
 	padding-bottom: 10%
+}
+
+}
+@media screen and (max-width: 500px) {
+#top{
+	width;
 }
 
 }
