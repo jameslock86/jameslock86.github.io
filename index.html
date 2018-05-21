@@ -4,108 +4,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link href="https://fonts.googleapis.com/css?family=Tenor+Sans" rel="stylesheet">
-	<style>
-	p, li,h1,h2,h3,h4,h5{
-		font-family:
-		 'Tenor Sans', sans-serif;
-	 }
-	.navbar {
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-	z-index: 5;
-}
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-.navbar a:hover {
-  background: #ddd;
-  color: black;
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-	padding bottom:auto;
-}
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-	margin-left: 10px;
-  font-size: 30px;
-  text-align: center;
-}
-.main {
-  padding: 16px;
-  margin-top: 30px;
-  height: 1500px; /* Used in this example to enable scrolling */
-}
-	.flip-container {
-		perspective: 1000px;
-	}/* flip the pane when hovered */
-		.flip-container:hover .flipper, .flip-container.hover .flipper {
-			transform: rotateY(180deg);
-		}
-	.flip-container, .front, .back {
-		width: 320px;
-		height: 480px;
-	}	/* flip speed goes here */
-	.flipper {
-		transition: 1.5s;
-		transform-style: preserve-3d;
-		position: relative;
-	}/* hide back of pane during swap */
-	.front, .back {
-		backface-visibility: hidden;
-		position: absolute;
-		top: 0;
-		left: 0;
-	}/* front pane, placed above back */
-	.front {
-		z-index: 2;
-		/* for firefox 31 */
-		background: lightgrey;
-		transform: rotateY(0deg);
-		border: 2px solid black;
-	}/* back, initially hidden pane */
-	.back {
-		background: lightgrey;
-		transform: rotateY(180deg);
-		border: 2px solid black;
-	}
-	.projects{
-	width:auto;
-		background-color: slategray;
-  background-image: -webkit-linear-gradient(30deg, lightgrey 50%, slategray 50%);
-  padding-bottom: 10%
-}
+<link href="index.css" rel="stylesheet" type="text/css">
 
-body{
-	/* margin-left: 10px; */
-	background:white;
-}
- #bio{
-	color: slategray;
-}
-#projects{
-	margin-left:auto;
-}
-#contact{
-background: white;
-padding-top: 15px;
-text-align: center;
-}
-#top{
-	overflow:auto;
-}
-	</style>
+</style>
 	<title>Portfolio</title>
 </head>
 <body>
@@ -119,15 +20,12 @@ text-align: center;
 		<a href="#bio">Bio</a>
 	  <a href="#projects">Projects</a>
 	  <a href="#contact">Contacts</a>
-
 </div>
 	<Section id="bio">
 
-
-
-			<div class="grid-container" style="margin-left:15%">
-						<div class= "col-sm-5">
-							<div class="card mb-6" style="align: center; margin-top: 100; width: 400; height: 400; border: black 1px solid; padding:40;">
+			<div class="flex-container wrap" style= "margin-left:15%" >
+						<div  class= "grid-template-columns">
+							<div id= "bio1" style="align: center; margin-top: 100; width: 400; height: 400; border: black 1px solid; padding:40;">
 								<h1>Bio</h1>
 								<img src='./GHS.jpg'style="border:solid white 1px; width: 200; height: 200;"} />
 								<div class="card-block">
@@ -138,9 +36,10 @@ text-align: center;
 							</div>
 						</div>
 					</br>
+						<div id="center"></div>
 
-						<div class="col-sm-5">
-							<div class="card mb-6" style="align: center; margin-top: 100; width: 400; height: 400; border: black 1px solid; padding:40;">
+						<div class="grid-template-columns" style="margin-left:15%" >
+							<div id="bio2" style="align: center; margin-top: 100; width: 400; height: 400; border: black 1px solid; padding:40;">
 								<div class="card">
 			<div class="card-content">
 				<p class="title">
@@ -177,7 +76,7 @@ text-align: center;
 </br>
 	<h1 style="margin-left: 25px">Projects</h1>
 
- 	<div class="grid-container" style="margin-left:25px;">
+ 	<div class="flex-container wrap" style="margin-left:25px;">
 <div class="col-1-4">
 	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 		<div class="flipper">
