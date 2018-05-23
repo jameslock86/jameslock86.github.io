@@ -19,9 +19,16 @@ html, body {
 }
 
 .blackBar {
-	height: 200px;
+	height: 150px;
 	width: 100%;
 	background: repeating-linear-gradient( -55deg, #222, #222 12px, #333 26px, #333 36px );
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.blackBar h4 {
+	color: white;
 }
 
 .navbar {
