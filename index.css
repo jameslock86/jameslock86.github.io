@@ -19,9 +19,10 @@ html, body {
 }
 
 .blackBar {
-	height: 150px;
+	height: 100px;
 	width: 100%;
-	background: repeating-linear-gradient( -55deg, #222, #222 12px, #333 26px, #333 36px );
+	background-color: black;
+	background-image: repeating-linear-gradient(135deg, transparent, transparent 20px, rgba(255,255,255,.1) 20px, rgba(255,255,255,.1) 35px);
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -92,6 +93,16 @@ html, body {
 #skills h1 {
 	text-align: center;
 	text-transform: uppercase;
+	padding-bottom: 50px;
+}
+
+hr {
+	border: none;
+	height: 1px;
+	/* Set the hr color */
+	color: #333; /* old IE */
+	background-color: #333; /* Modern Browsers */
+	width: 50%;
 }
 
 .iconWrapper {
