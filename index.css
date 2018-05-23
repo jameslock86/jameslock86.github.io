@@ -1,21 +1,22 @@
 
 * {
-	font-family:
-	 'Tenor Sans', sans-serif;
+	font-family: 'IBM Plex Sans', sans-serif;
  }
 html, body {
 	height: 100%;
-	margin: 1%
 }
 
 .navbar {
-	width:;
-overflow: hidden;
-background-color: #333;
-position: fixed;
-top: 0;
-width: 100%;
-z-index: 5;
+	overflow: hidden;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 5;
+}
+
+.boldFont {
+	font-weight: 700 !important;
 }
 
 .james {
@@ -24,6 +25,49 @@ z-index: 5;
 	width: auto;
 	height: 350px;
 	border-radius: 50%;
+}
+
+.icon {
+	width: 50%;
+	height: auto;
+	-webkit-transition: all .5s;
+	transition: all .5s;
+}
+
+#skills {
+
+	padding: 40px 0 40px 0;
+}
+
+#skills h1 {
+	text-align: center;
+}
+
+.iconWrapper {
+	display: flex;
+	padding-left: 2px;
+	padding-right: 2px;
+	position: relative;
+	z-index: 10;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 30%;
+	-webkit-transition: all .5s;
+	transition: all .5s;
+	border-radius: 25px;
+}
+
+.iconWrapper:hover {
+	background-color: 	rgb(135,206,235)
+}
+
+.iconWrapper:hover > .icon {
+	width: 60%;
+}
+
+#iconsWrapper {
+	padding: 0 14vw;
 }
 
 .titleWrapper {
