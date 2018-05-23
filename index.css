@@ -27,6 +27,27 @@ html, body {
 	border-radius: 50%;
 }
 
+
+.purple:hover {
+	background-color: rgb(119, 26, 116);
+}
+
+.blue:hover {
+	background-color: rgb(121, 96, 197);
+}
+
+.grey:hover {
+	background-color: rgb(129, 162, 197);
+}
+
+.green:hover {
+	background-color: rgb(175, 208, 200);
+}
+
+.pink:hover {
+	background-color: rgb(175, 227, 260);
+}
+
 .icon {
 	width: 50%;
 	height: auto;
@@ -36,11 +57,12 @@ html, body {
 
 #skills {
 
-	padding: 40px 0 40px 0;
+	padding: 100px 0 100px 0;
 }
 
 #skills h1 {
 	text-align: center;
+	text-transform: uppercase;
 }
 
 .iconWrapper {
@@ -52,15 +74,12 @@ html, body {
 	justify-content: center;
 	align-items: center;
 	width: 50%;
-	height: 30%;
+	height: 25%;
 	-webkit-transition: all .5s;
 	transition: all .5s;
 	border-radius: 25px;
 }
 
-.iconWrapper:hover {
-	background-color: 	rgb(135,206,235)
-}
 
 .iconWrapper:hover > .icon {
 	width: 60%;
