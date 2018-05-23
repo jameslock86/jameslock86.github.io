@@ -19,10 +19,9 @@ html, body {
 }
 
 .blackBar {
-	height: 100px;
+	height: 150px;
 	width: 100%;
-	background-color: black;
-	background-image: repeating-linear-gradient(135deg, transparent, transparent 20px, rgba(255,255,255,.1) 20px, rgba(255,255,255,.1) 35px);
+	background: repeating-linear-gradient( -55deg, #222, #222 12px, #333 26px, #333 36px );
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -39,6 +38,11 @@ html, body {
 	top: 0;
 	width: 100%;
 	z-index: 5;
+}
+
+.projectImage{
+	width: 50%;
+	height:auto;
 }
 
 .boldFont {
@@ -86,23 +90,12 @@ html, body {
 
 #skills {
 	background-color: white;
-	padding: 90px;
-	/* padding: 100px 0 100px 0; */
+	padding: 100px 0 0px 0;
 }
 
 #skills h1 {
 	text-align: center;
 	text-transform: uppercase;
-	padding-bottom: 50px;
-}
-
-hr {
-	border: none;
-	height: 1px;
-	/* Set the hr color */
-	color: #333; /* old IE */
-	background-color: #333; /* Modern Browsers */
-	width: 50%;
 }
 
 .iconWrapper {
@@ -270,10 +263,7 @@ height: 1500px; /* Used in this example to enable scrolling */
 	border: 2px solid black;
 }
 .projects{
-width:auto;
-	background-color: rgb(69,69,69);
-background-image: -webkit-linear-gradient(30deg, lightgrey 50%, slategray 50%);
-padding-bottom: 10%
+
 }
 
 .landingPage {
@@ -302,6 +292,11 @@ padding-bottom: 10%
 	padding-bottom: 40px;
 }
 
+.projectRow {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
 .frame {
 	display: flex;
 	flex-direction: column;
@@ -323,7 +318,12 @@ padding-bottom: 10%
 }
 
 #projects{
-margin-left:auto;
+	padding-top: 80px;
+	background: linear-gradient(#ffffff 50%, rgba(255,255,255,0) 0) 0 0,
+	radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255,255,255,0) 0) 0 0,
+	radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255,255,255,0) 0) 55px 0 #2a405e;
+	background-size:110px 110px;
+	background-repeat:repeat-x;
 }
 #contact{
 background: white;
