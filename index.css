@@ -156,6 +156,10 @@ h6, h5 {
 	padding: 5vh 0 0 20vh;
 }
 
+.front h3 {
+	padding-top: 20px;
+}
+
 .tagLine {
 	padding: 50px 0 0 19vh;
 }
@@ -260,9 +264,25 @@ height: 1500px; /* Used in this example to enable scrolling */
 }/* back, initially hidden pane */
 .back {
 	transform: rotateY(180deg);
+	width: 100%;
+	text-align: center;
 }
 .projects{
 
+}
+
+.projectLinks {
+	padding-top: 10px;
+}
+
+.vl {
+	border-left: 2px solid white;
+	height: 20px;
+	margin: 0px 10px 0px 10px;
+}
+
+i {
+	padding-right: 5px;
 }
 
 .landingPage {
@@ -323,6 +343,10 @@ height: 1500px; /* Used in this example to enable scrolling */
 	radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255,255,255,0) 0) 55px 0 #2a405e;
 	background-size:110px 110px;
 	background-repeat:repeat-x;
+}
+
+#projects * {
+	color: white;
 }
 
 #projects h3 {
