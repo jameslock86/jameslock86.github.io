@@ -346,7 +346,7 @@ i {
 	padding-top: 80px;
 	background: linear-gradient(#ffffff 50%, rgba(255,255,255,0) 0) 0 0,
 	radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255,255,255,0) 0) 0 0,
-	radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255,255,255,0) 0) 55px 0 #2a405e;
+	radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255,255,255,0) 0) 55px 0 #222;
 	background-size:110px 110px;
 	background-repeat:repeat-x;
 }
