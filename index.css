@@ -19,9 +19,15 @@ html, body {
 }
 
 .blackBar {
-	height: 150px;
+	height: 100px;
 	width: 100%;
-	background: repeating-linear-gradient( -55deg, #222, #222 12px, #333 26px, #333 36px );
+	background: repeating-linear-gradient(
+		-55deg,
+		#222,
+		#222 10px,
+		#333 10px,
+		#333 20px
+	);
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
