@@ -6,10 +6,10 @@ function appendRainDrops() {
   for(let i = 0; i < 30; i++){
     $('#raindrops').append(
       `
-      <div class="raindrop" style="width:300px;top:${getRandomNumber(800)}px;left:${getRandomNumber(95)}%" >
+      <div class="raindrop" style="width:300px;top:${getRandomNumber(600)}px;left:${getRandomNumber(99)}%" >
         <div style ="
-          width: 10px;
-          height: 10px;
+          width: 7px;
+          height: 7px;
           background: white;
           -moz-border-radius: 50px;
           -webkit-border-radius: 50px;
