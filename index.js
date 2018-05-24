@@ -1,4 +1,26 @@
+function getRandomNumber(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
 
+function appendRainDrops() {
+  for(let i = 0; i < 30; i++){
+    $('#raindrops').append(
+      `
+      <div class="raindrop" style="width:300px;top:${getRandomNumber(800)}px;left:${getRandomNumber(95)}%" >
+        <div style ="
+          width: 10px;
+          height: 10px;
+          background: white;
+          -moz-border-radius: 50px;
+          -webkit-border-radius: 50px;
+          border-radius: 50px;
+        ">
+        </div>
+      </div>
+      `
+    )
+  }
+}
 
 function appendIcons(){
 
@@ -29,6 +51,8 @@ function appendIcons(){
       </div>
     `)
   })
+
+  appendRainDrops()
 
 }
 

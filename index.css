@@ -351,6 +351,14 @@ i {
 	background-repeat:repeat-x;
 }
 
+.raindrop {
+	position: absolute;
+}
+
+#raindrops {
+	position: relative;
+}
+
 #projects * {
 	color: white;
 }
