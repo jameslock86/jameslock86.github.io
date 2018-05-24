@@ -1,26 +1,26 @@
-function getRandomNumber(max) {
-  return Math.floor(Math.random() * Math.floor(max));
-}
+// function getRandomNumber(max) {
+//   return Math.floor(Math.random() * Math.floor(max));
+// }
 
-function appendRainDrops() {
-  for(let i = 0; i < 30; i++){
-    $('#raindrops').append(
-      `
-      <div class="raindrop" style="width:300px;top:${getRandomNumber(600)}px;left:${getRandomNumber(99)}%" >
-        <div style ="
-          width: 7px;
-          height: 7px;
-          background: white;
-          -moz-border-radius: 50px;
-          -webkit-border-radius: 50px;
-          border-radius: 50px;
-        ">
-        </div>
-      </div>
-      `
-    )
-  }
-}
+// function appendRainDrops() {
+//   for(let i = 0; i < 30; i++){
+//     $('#raindrops').append(
+//       `
+//       <div class="raindrop" style="width:300px;top:${getRandomNumber(600)}px;left:${getRandomNumber(99)}%" >
+//         <div style ="
+//           width: 7px;
+//           height: 7px;
+//           background: white;
+//           -moz-border-radius: 50px;
+//           -webkit-border-radius: 50px;
+//           border-radius: 50px;
+//         ">
+//         </div>
+//       </div>
+//       `
+//     )
+//   }
+// }
 
 function appendIcons(){
 
