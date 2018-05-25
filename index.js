@@ -47,12 +47,10 @@ function appendIcons(){
   icons.forEach((icon) => {
       $('#icons').append(`
       <div class="iconWrapper col-md-2 ${icon[0]}">
-          <img class="icon" src="${icon[1]}">
+            <img class="icon" src="${icon[1]}">
       </div>
     `)
   })
-
-  appendRainDrops()
 
 }
 
