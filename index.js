@@ -33,7 +33,7 @@ function appendIcons(){
     ['green', './Assets/icons/aws.png'],
     ['blue', './Assets/icons/bootstrap.png'],
     ['pink', './Assets/icons/materialize.png'],
-   	['pink', './Assets/icons/PostgreSQL.png'],
+   	['pink', './Assets/icons/postgresql.png'],
     ['pink', './Assets/icons/mongodb.png'],
     ['purple', './Assets/icons/node.png'],
     ['blue', './Assets/icons/heroku.png'],
