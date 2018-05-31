@@ -356,7 +356,7 @@ i {
 	height: 50vh;
 	position: relative;
 	background-color:#fff;
-	background-image: 
+	background-image:
 	linear-gradient(rgb(230, 230, 230) 1px, transparent 1px),
 	linear-gradient(90deg, rgb(230, 230, 230) 1px, transparent 1px),
 	linear-gradient(rgb(230, 230, 230) 1px, transparent 1px),
@@ -430,4 +430,14 @@ overflow:auto;
 	width;
 }
 
+}
+#phoneApp{
+	height: 400px;
+	width:auto;
+}
+#phone{
+	    padding-bottom: 400px;
+			margin-left: auto;
+			margin-right: auto;
+			 display: block;
 }
