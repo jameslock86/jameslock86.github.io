@@ -35,6 +35,7 @@ function appendIcons(){
     ['pink', './Assets/icons/materialize.png'],
    	['pink', './Assets/icons/postgresql.png'],
     ['pink', './Assets/icons/mongodb.png'],
+    ['pink', './Assets/icons/strikingly.png'],
     ['purple', './Assets/icons/node.png'],
     ['blue', './Assets/icons/heroku.png'],
     ['pink', './Assets/icons/knex.png'],
@@ -42,7 +43,8 @@ function appendIcons(){
     ['pink', './Assets/icons/wordpress.png'],
     ['blue', './Assets/icons/axios.png'],
     ['purple', './Assets/icons/api.png'],
-		  ['purple', './Assets/icons/expoXDE.png'],
+      ['purple', './Assets/icons/expoXDE.png'],
+    ['blue', './Assets/icons/shopify.jpeg'],
   ]
 
   icons.forEach((icon) => {
