@@ -9,10 +9,6 @@
   margin-bottom: 30px;
 }
 
-
-
-
-
 * {
 	font-family: 'Monsterrat';
 	margin:0;
@@ -547,7 +543,7 @@ background-color: white;
 	color: black;
 }
 .comingSoon-text{
-	padding-top:30px;
+	padding-top:-100px;
 }
 
 .hero-text{
@@ -555,4 +551,24 @@ background-color: white;
 	margin-right:15%;
 	text-align: justify;
 	font-size: 20px;
+}
+@media only screen and (max-width: 764px){
+	.hero-text{
+		font-size:15px;
+}
+}
+@media only screen and (max-width: 764px){
+	.contact-form{
+		width:auto;
+	}
+} 
+.seeMoreProjects{
+	font-size:30px;
+}
+@media only screen and (max-width: 400px){
+	.seeMoreProjects{
+		font-size:25px !important;
+}}
+.commingSoon{
+	font-size:25px;
 }
