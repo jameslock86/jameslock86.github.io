@@ -526,6 +526,7 @@ overflow:auto;
 }
 .comingSoon-text{
 	color: white;
+	margin-top:-75px;
 }
 
 .SeeMore-section{
@@ -570,5 +571,5 @@ background-color: white;
 		font-size:25px !important;
 }}
 .commingSoon{
-	font-size:25px;
+	font-size:15px;
 }
