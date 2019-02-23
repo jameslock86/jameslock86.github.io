@@ -45,6 +45,8 @@ function appendIcons(){
     ['purple', './Assets/icons/api.png'],
       ['purple', './Assets/icons/expoXDE.png'],
     ['blue', './Assets/icons/shopify.jpeg'],
+    ['pink', './Assets/icons/MySQL.png'],
+    ['pink', './Assets/icons/firebase.png'],
   ]
 
   icons.forEach((icon) => {
